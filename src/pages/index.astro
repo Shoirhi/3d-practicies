@@ -1,0 +1,12 @@
+---
+import Layout from "@/layouts/Layout.astro";
+import Experience from "@/components/Experience";
+---
+
+<Layout>
+  <div
+    class="w-full h-dvh bg-[#d9afd9] bg-gradient-to-t from-[#d9afd9] to-[#97d9e1]"
+  >
+    <Experience client:only="react" />
+  </div>
+</Layout>
