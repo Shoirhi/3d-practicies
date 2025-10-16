@@ -1,47 +1,29 @@
-# Astro Starter Kit: Minimal
+# 3D Practicies
 
-```sh
-npm create astro@latest -- --template minimal
-```
+## 本番環境
+- https://3d-practicies.pages.dev/
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## プロジェクトの内容
+- YouTube チャンネル Wawa Sensei が公開している 3D ポートフォリオをベースに、Astro + React で再構築した練習用プロジェクトです。
+- スクロール操作に合わせて 3D モデルのカメラアニメーションとオーバーレイ UI が連動するインタラクティブな体験を再現しています。
+- Cloudflare Pages でホスティングし、ブラウザからすぐに確認できるようにしています。
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 使用している技術
+- Astro 4.x & TypeScript による静的サイト構築
+- React 18 と @react-three/fiber / @react-three/drei を用いた Three.js ベースの 3D 表現
+- glTF モデルの読み込みを gsap と組み合わせたアニメーション制御
+- Tailwind CSS（tailwind-merge, tailwindcss-animate）によるスタイリング
+- Cloudflare Pages（@astrojs/cloudflare）を利用したデプロイ
 
-## 🚀 Project Structure
+## 開発コマンド
 
-Inside of your Astro project, you'll see the following folders and files:
+| コマンド | 説明 |
+| :-- | :-- |
+| `npm install` | 依存関係をインストール |
+| `npm run dev` | `localhost:4321` で開発サーバーを起動 |
+| `npm run build` | 型チェックと本番ビルドを実行 |
+| `npm run preview` | ビルド済み成果物をローカルでプレビュー |
+| `npm run astro ...` | Astro CLI コマンドを実行 |
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 参考にしている YouTube
+- [Wawa Sensei](https://www.youtube.com/@WawaSensei)
